@@ -14,6 +14,6 @@ public class Student {
             total += grade;
         }
 
-        return total;
+        return total / grades.size();
     }
 }
