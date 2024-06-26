@@ -9,8 +9,8 @@ class NaughtyStudentTest {
     void testGetAverageGradeForNaughtyStudent() {
         var grades = List.of(85.0, 67.5, 69.5);
 
-        var student = new Student(grades);
-        var naughtyStudent = new NaughtyStudent(grades);
+        var student = new Student("Student 1", grades);
+        var naughtyStudent = new NaughtyStudent("Naughty 1", grades);
 
         assertAll("Test naughty",
                 () -> assertTrue(student.getAverageGrade() < naughtyStudent.getAverageGrade()),

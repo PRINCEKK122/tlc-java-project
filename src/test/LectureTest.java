@@ -15,9 +15,9 @@ class LectureTest {
     @BeforeEach
     void setUp() {
         students = List.of(
-                new Student(List.of(95.0, 85.5, 78.5)),
-                new Student(List.of(87.5, 78.0, 65.0)),
-                new Student(List.of(92.5, 90.0, 91.5))
+                new Student("Student 1", List.of(95.0, 85.5, 78.5)),
+                new Student("Student 2", List.of(87.5, 78.0, 65.0)),
+                new Student("Student 3", List.of(92.5, 90.0, 91.5))
         );
 
         for (Student student : students) {

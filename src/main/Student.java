@@ -1,9 +1,13 @@
+import interfaces.Nameable;
+
 import java.util.List;
 
-public class Student {
+public class Student implements Nameable {
     private final List<Double> grades;
+    private final String name;
 
-    public Student(List<Double> grades) {
+    public Student(String name, List<Double> grades) {
+        this.name = name;
         this.grades = grades;
     }
 
@@ -15,5 +19,10 @@ public class Student {
         }
 
         return total / grades.size();
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 }
