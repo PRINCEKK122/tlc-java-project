@@ -1,8 +1,10 @@
+import enums.Level;
+
 import java.util.List;
 
 public class NaughtyStudent extends Student {
-    public NaughtyStudent(String name, List<Double> grades) {
-        super(name, grades);
+    public NaughtyStudent(String name, Level level, List<Double> grades) {
+        super(name, level, grades);
     }
 
     @Override

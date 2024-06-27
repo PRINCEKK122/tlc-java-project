@@ -1,10 +1,11 @@
+import enums.Level;
 import org.junit.jupiter.api.Test;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class StudentTest {
     private final List<Double> grades = List.of(85.0, 95.0, 99.0);
-    private final Student student = new Student("Student 1", grades);
+    private final Student student = new Student("Student 1", Level.JUNIOR, grades);
 
     @Test
     void testGetAverageGrade() {
